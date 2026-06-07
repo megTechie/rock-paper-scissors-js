@@ -1,0 +1,51 @@
+<!-- npx tailwindcss -i RockPaperScissor/src/input.css -o RockPaperScissor/src/output.css --watch -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rock Paper and Scissors</title>
+	<link rel="stylesheet" href="./src/output.css">
+</head>
+<body>
+	<div class="">
+
+		<header 
+		class = "bg-[#081b31] text-white flex justify-center font-mono font-semibold text-4xl gap-x-10 py-7">
+			<h1>Rock</h1>
+			<h1>Paper</h1>
+			<h1>Scissors</h1>
+		</header>
+
+		<main>
+			<!-- images -->
+			<div class="flex justify-center gap-x-17 mt-15">
+				<img id="rock" class = "hover:border-5 border-[#081b31]" src="/RockPaperScissor/images/rock.png" alt = "rock">
+				<img id="paper" class = "hover:border-5 border-[#081b31]" src="/RockPaperScissor/images/paper.png" alt = "paper">
+				<img id="scissor" class = "hover:border-5 border-[#081b31]" src="/RockPaperScissor/images/scissors.png" alt = "scissor">
+			</div>
+			<!-- count -->
+			<div class="flex justify-center items-center mt-30 gap-x-20">
+      			<div class="flex flex-col justify-center items-center font-bold text-4xl font-mono">
+        			<p class="scoreU">0</p>
+        			<p>You</p>
+      			</div>
+      			<div class="flex flex-col justify-center items-center font-bold text-4xl font-mono">
+        			<p class="scoreC">0</p>
+        			<p>Bot</p>
+      			</div>
+    		</div>
+				
+			</div>
+			<!-- button -->
+			<div class="flex justify-center items-center">
+				<button 
+				class="bg-[#081b31] text-white font-mono font-medium rounded-2xl mt-25 shadow-2xl">
+					<h1 class="text-3xl px-7 py-4" id = "message" >Pick your move</h1>
+				</button>
+			</div>
+		</main>
+	</div>
+	 <script src="script.js"></script>
+</body>
+</html>
